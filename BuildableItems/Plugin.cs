@@ -25,16 +25,6 @@ namespace BuildableItems
             }
             return true;
         }
-        
-        public static Mesh MakeMeshReadable(this Mesh mesh)
-        {
-            Mesh copy = new Mesh();
-            copy.vertices = mesh.vertices;
-            copy.triangles = mesh.triangles;
-            copy.normals = mesh.normals;
-            copy.uv = mesh.uv;
-            return copy;
-        }
     }
     [BepInPlugin(ModGUID, ModName, ModVersion)]
     public class BuildableItemsPlugin : BaseUnityPlugin
